@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="static/favicon.ico">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Load the `mapbox-gl-geocoder` plugin. -->
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="static/colorjoe.min.js"></script>
+        <link rel="stylesheet" href="static/colorjoe.css">
+        <title>BIM model viewer with GIS</title>
+    </head>
+</head>
+<body>
+    <div class="relative w-screen h-screen" id="viewer-container"></div>
+    <div class="colorjoe"></div>
+
+    <h1>IFC to GLTF Converter</h1>
+    <input type="file" id="file-input" accept=".ifc">
+    <button id="save-button">Convert and Download</button>
+    <script src="bundle/viewer.js"></script>
+</body>
+</html>
